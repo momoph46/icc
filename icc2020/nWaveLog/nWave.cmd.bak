@@ -1,0 +1,232 @@
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvOpenFile -win $_nWave1 {/home/phong/icc2020/SME.fsdb}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/\$unit_0x29ffa1f6"
+wvGetSignalSetScope -win $_nWave1 "/testfixture"
+wvGetSignalSetScope -win $_nWave1 "/testfixture/u_SME"
+wvSetPosition -win $_nWave1 {("G1" 20)}
+wvSetPosition -win $_nWave1 {("G1" 20)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/testfixture/u_SME/clk} \
+{/testfixture/u_SME/counter\[5:0\]} \
+{/testfixture/u_SME/find_match} \
+{/testfixture/u_SME/find_star} \
+{/testfixture/u_SME/ispattern} \
+{/testfixture/u_SME/isstring} \
+{/testfixture/u_SME/m_reg\[2:0\]} \
+{/testfixture/u_SME/match} \
+{/testfixture/u_SME/match_index\[4:0\]} \
+{/testfixture/u_SME/next_state\[3:0\]} \
+{/testfixture/u_SME/pat_cell\[7:0\]} \
+{/testfixture/u_SME/pat_idx\[2:0\]} \
+{/testfixture/u_SME/pat_len\[3:0\]} \
+{/testfixture/u_SME/pat_temp\[7:0\]} \
+{/testfixture/u_SME/star_mode2} \
+{/testfixture/u_SME/state\[3:0\]} \
+{/testfixture/u_SME/str_cell\[7:0\]} \
+{/testfixture/u_SME/str_len\[5:0\]} \
+{/testfixture/u_SME/str_temp\[33:0\]} \
+{/testfixture/u_SME/valid} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 \
+           18 19 20 )} 
+wvSetPosition -win $_nWave1 {("G1" 20)}
+wvSetPosition -win $_nWave1 {("G1" 20)}
+wvSetPosition -win $_nWave1 {("G1" 20)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/testfixture/u_SME/clk} \
+{/testfixture/u_SME/counter\[5:0\]} \
+{/testfixture/u_SME/find_match} \
+{/testfixture/u_SME/find_star} \
+{/testfixture/u_SME/ispattern} \
+{/testfixture/u_SME/isstring} \
+{/testfixture/u_SME/m_reg\[2:0\]} \
+{/testfixture/u_SME/match} \
+{/testfixture/u_SME/match_index\[4:0\]} \
+{/testfixture/u_SME/next_state\[3:0\]} \
+{/testfixture/u_SME/pat_cell\[7:0\]} \
+{/testfixture/u_SME/pat_idx\[2:0\]} \
+{/testfixture/u_SME/pat_len\[3:0\]} \
+{/testfixture/u_SME/pat_temp\[7:0\]} \
+{/testfixture/u_SME/star_mode2} \
+{/testfixture/u_SME/state\[3:0\]} \
+{/testfixture/u_SME/str_cell\[7:0\]} \
+{/testfixture/u_SME/str_len\[5:0\]} \
+{/testfixture/u_SME/str_temp\[33:0\]} \
+{/testfixture/u_SME/valid} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 \
+           18 19 20 )} 
+wvSetPosition -win $_nWave1 {("G1" 20)}
+wvGetSignalClose -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 6 )} 
+wvSetCursor -win $_nWave1 975305803.744612
+wvResizeWindow -win $_nWave1 8 31 1366 705
+wvZoom -win $_nWave1 974197244.679628 986698006.034512
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoom -win $_nWave1 990356677.973790 991499151.663306
+wvSetCursor -win $_nWave1 990619569.768922
+wvZoom -win $_nWave1 990598685.841264 990696963.147889
+wvSelectSignal -win $_nWave1 {( "G1" 6 )} 
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 6 )} 
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvSetCursor -win $_nWave1 806085.263374 -snap {("G1" 6)}
+wvZoom -win $_nWave1 795517.811049 812003.036677
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/\$unit_0x29ffa1f6"
+wvGetSignalSetScope -win $_nWave1 "/testfixture"
+wvGetSignalSetScope -win $_nWave1 "/testfixture/u_SME"
+wvSetPosition -win $_nWave1 {("G1" 21)}
+wvSetPosition -win $_nWave1 {("G1" 21)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/testfixture/u_SME/clk} \
+{/testfixture/u_SME/counter\[5:0\]} \
+{/testfixture/u_SME/find_match} \
+{/testfixture/u_SME/find_star} \
+{/testfixture/u_SME/ispattern} \
+{/testfixture/u_SME/isstring} \
+{/testfixture/u_SME/m_reg\[2:0\]} \
+{/testfixture/u_SME/match} \
+{/testfixture/u_SME/match_index\[4:0\]} \
+{/testfixture/u_SME/next_state\[3:0\]} \
+{/testfixture/u_SME/pat_cell\[7:0\]} \
+{/testfixture/u_SME/pat_idx\[2:0\]} \
+{/testfixture/u_SME/pat_len\[3:0\]} \
+{/testfixture/u_SME/pat_temp\[7:0\]} \
+{/testfixture/u_SME/star_mode2} \
+{/testfixture/u_SME/state\[3:0\]} \
+{/testfixture/u_SME/str_cell\[7:0\]} \
+{/testfixture/u_SME/str_len\[5:0\]} \
+{/testfixture/u_SME/str_temp\[33:0\]} \
+{/testfixture/u_SME/valid} \
+{/testfixture/u_SME/chardata\[7:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 21 )} 
+wvSetPosition -win $_nWave1 {("G1" 21)}
+wvSetPosition -win $_nWave1 {("G1" 21)}
+wvSetPosition -win $_nWave1 {("G1" 21)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/testfixture/u_SME/clk} \
+{/testfixture/u_SME/counter\[5:0\]} \
+{/testfixture/u_SME/find_match} \
+{/testfixture/u_SME/find_star} \
+{/testfixture/u_SME/ispattern} \
+{/testfixture/u_SME/isstring} \
+{/testfixture/u_SME/m_reg\[2:0\]} \
+{/testfixture/u_SME/match} \
+{/testfixture/u_SME/match_index\[4:0\]} \
+{/testfixture/u_SME/next_state\[3:0\]} \
+{/testfixture/u_SME/pat_cell\[7:0\]} \
+{/testfixture/u_SME/pat_idx\[2:0\]} \
+{/testfixture/u_SME/pat_len\[3:0\]} \
+{/testfixture/u_SME/pat_temp\[7:0\]} \
+{/testfixture/u_SME/star_mode2} \
+{/testfixture/u_SME/state\[3:0\]} \
+{/testfixture/u_SME/str_cell\[7:0\]} \
+{/testfixture/u_SME/str_len\[5:0\]} \
+{/testfixture/u_SME/str_temp\[33:0\]} \
+{/testfixture/u_SME/valid} \
+{/testfixture/u_SME/chardata\[7:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 21 )} 
+wvSetPosition -win $_nWave1 {("G1" 21)}
+wvGetSignalClose -win $_nWave1
+wvSetCursor -win $_nWave1 805887.549750 -snap {("G1" 21)}
+wvSetCursor -win $_nWave1 807943.771441 -snap {("G1" 21)}
+wvSelectSignal -win $_nWave1 {( "G1" 5 )} 
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvSetCursor -win $_nWave1 1340940.159428 -snap {("G1" 5)}
+wvZoom -win $_nWave1 1327326.553748 1374974.173626
+wvZoomOut -win $_nWave1
+wvSetCursor -win $_nWave1 1360679.887663 -snap {("G1" 7)}
+wvSelectSignal -win $_nWave1 {( "G1" 10 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 7 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 9 )} 
+wvSetCursor -win $_nWave1 1327582.723747 -snap {("G2" 0)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 7 )} 
+wvExit
