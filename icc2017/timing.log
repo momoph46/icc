@@ -1,0 +1,69 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : DT
+Version: Q-2019.12
+Date   : Tue Feb 15 13:48:58 2022
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: res_di[2] (input port clocked by clk)
+  Endpoint: res_addr_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DT                 tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  input external delay                     5.00       5.50 f
+  res_di[2] (in)                           0.08       5.58 f
+  U270/Y (NOR2X4)                          0.09       5.67 r
+  U269/Y (INVX3)                           0.08       5.75 f
+  U268/Y (NOR3X4)                          0.13       5.88 r
+  U333/Y (NAND2X6)                         0.11       5.99 f
+  U301/Y (NOR2X4)                          0.10       6.09 r
+  U325/Y (OA21X4)                          0.19       6.28 r
+  U309/Y (NAND2X6)                         0.07       6.35 f
+  U275/Y (NOR4X4)                          0.26       6.61 r
+  U308/Y (MXI2X4)                          0.15       6.77 f
+  U312/Y (NAND2X4)                         0.13       6.89 r
+  U310/Y (NAND4BX2)                        0.32       7.21 r
+  U280/Y (NOR2BX2)                         0.52       7.73 r
+  U320/Y (NAND2X2)                         0.23       7.96 f
+  U271/Y (OAI31X1)                         0.22       8.18 r
+  U577/Y (CLKINVX1)                        0.29       8.47 f
+  U385/Y (OAI211X2)                        0.21       8.69 r
+  U329/Y (BUFX20)                          0.21       8.90 r
+  U367/Y (NAND2X1)                         0.28       9.18 f
+  U327/Y (OR2X2)                           0.34       9.52 f
+  U279/Y (INVX6)                           0.25       9.77 r
+  U575/Y (AOI2BB2X1)                       0.20       9.97 f
+  U569/Y (NAND4X1)                         0.23      10.20 r
+  res_addr_reg[1]/D (DFFSX1)               0.00      10.20 r
+  data arrival time                                  10.20
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.50      10.50
+  clock uncertainty                       -0.10      10.40
+  res_addr_reg[1]/CK (DFFSX1)              0.00      10.40 r
+  library setup time                      -0.18      10.22
+  data required time                                 10.22
+  -----------------------------------------------------------
+  data required time                                 10.22
+  data arrival time                                 -10.20
+  -----------------------------------------------------------
+  slack (MET)                                         0.01
+
+
+1
